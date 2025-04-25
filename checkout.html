@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Mission Cinemas</title>
+  <link rel="apple-touch-icon" type="image/png" href="/favicon/apple-touch-icon.png" sizes="96x96" >
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon-96x96.png" >
+  <link rel="manifest" href="/favicon/web-app-manifest-512x512.png" >
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" >
+  <link rel="manifest" href="/favicon/web-app-manifest-192x192.png" >
+  <link rel="stylesheet" href="checkout.css" >
+  <script src="checkout.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CONFIRM YOUR BOOKING</h1>
+  </header>
+  <main>
+    <section id="user-details">
+      <div class="checkout-form-section">
+        <h2>User Information</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Jane Smith" >
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="jane@example.com" >
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" >
+          </div>
+        </div>
+      
+        <h2>Payment Details</h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" >
+          </div>
+          <div class="form-group">
+            <label for="cardName">Name on Card</label>
+            <input type="text" id="cardName" placeholder="John Doe" >
+          </div>
+          <div class="form-group">
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" id="expiryDate" placeholder="MM/YY" >
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="123" >
+          </div>
+        </div>
+      </div>      
+      </section>
+
+    <div id="checkout-container"></div>
+
+    <button onclick="window.location.href='booking.html'" style="margin-right: 1rem;">← Go Back</button>
+    <button id="pay-btn">Pay</button>
+    <div id="confirmation" style="margin-top: 2rem;"></div>
+  </main>
+  <footer>
+    <p>Contact us: <a href="mailto:support@movietix.com">support@movietix.com</a> | 📞 +1 800 123 4567</p>
+    <p>
+      Follow us: 
+      <a href="https://www.instagram.com">Instagram</a> | 
+      <a href="https://www.twitter.com">X</a> | 
+      <a href="https://www.facebook.com">Facebook</a>
+    </p>
+  </footer>
+  
+</body>
+</html>

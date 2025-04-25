@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Mission Cinemas</title>
+  <link rel="apple-touch-icon" type="image/png" href="/favicon/apple-touch-icon.png" sizes="96x96" >
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon-96x96.png" >
+  <link rel="manifest" href="/favicon/web-app-manifest-512x512.png" >
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" >
+  <link rel="manifest" href="/favicon/web-app-manifest-192x192.png" >
+  <link rel="stylesheet" href="booking.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>MISSION CINEMAS</h1>
+    <nav>
+      <a href="booking.html">Book Tickets</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="movie-sections">
+      <h2>NOW SHOWING</h2>
+      <div class="movie-list" id="now-showing"></div>
+
+      <h2>UPCOMING MOVIES</h2>
+      <div class="movie-list" id="upcoming"></div>
+
+      <h2>PREMIUM SCREENINGS</h2>
+      <div class="movie-list" id="premium"></div>
+
+      <h2>3D & IMAX SHOWS</h2>
+      <div class="movie-list" id="imax"></div>
+
+      <h2>SPECIAL DISCOUNTS</h2>
+      <div class="movie-list" id="discounts"></div>
+    </section>
+
+    <section id="ticket-summary">
+      <h2>Selected Tickets</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Movie</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="ticket-table-body"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Grand Total</strong></td>
+            <td id="grand-total">Rs0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="actions">
+        <button onclick="saveFavourite()">Save as Favourite</button>
+        <button onclick="applyFavourite()">Apply Favourite</button>
+        <button onclick="goToCheckout()">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us: <a href="mailto:support@movietix.com">support@movietix.com</a> | 📞 +1 800 123 4567</p>
+    <p>
+      Follow us: 
+      <a href="https://www.instagram.com">Instagram</a> | 
+      <a href="https://www.twitter.com">X</a> | 
+      <a href="https://www.facebook.com">Facebook</a>
+    </p>
+  </footer>
+  
+</body>
+</html>
